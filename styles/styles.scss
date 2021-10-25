@@ -2,6 +2,7 @@
 @import "./_footer";
 @import "./_icons";
 @import "./_aboutmeSection";
+@import "./_samples";
 
 body{
     background-repeat: no-repeat;
@@ -32,8 +33,8 @@ body{
 }
 .abstractImage{
     position: absolute;
-    margin-left: 500px;
-    overflow: hidden;
+    left: -400px;
+    top:300px;
 }
 .vrtLine{
     background-color: rgb(30, 75, 60);
