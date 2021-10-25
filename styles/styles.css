@@ -1,0 +1,28 @@
+body {
+  background-color: #e1f8f8;
+  margin: 0;
+}
+
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2vh;
+  background-color: bisque;
+}
+
+#mainContainer {
+  min-height: 720px;
+  min-width: 1024px;
+  background-image: url("../images/bk1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainContainer p {
+  margin: 0;
+}
+/*# sourceMappingURL=styles.css.map */
