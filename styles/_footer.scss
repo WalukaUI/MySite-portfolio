@@ -1,0 +1,6 @@
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: adjust-hue($color: #8acfd1, $degrees: 20);
+    padding: 2vh;
+}

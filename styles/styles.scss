@@ -1,20 +1,43 @@
+@import "./_header";
+@import "./_footer";
+@import "./_icons";
+@import "./_aboutmeSection";
+
 body{
-    background-color: rgb(225, 248, 248);
+    background-repeat: no-repeat;
+    background-size:contain;
     margin: 0;
 }
-.headerContainer{
+
+#mainContainer{
     display: flex;
     justify-content: space-evenly;
-    padding: 2vh;
-    background-color: bisque;
-}
-#mainContainer{
-    min-height: 720px;
+    align-items: center;
+    min-height: 640px;
     min-width: 1024px;
-    background-image: url("../images/bk1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    color: rgb(36, 149, 241);
+    background: linear-gradient(rgb(17, 13, 68),rgb(20, 28, 53));
     p{
         margin: 0;
     }
+    h1{
+        font-family: 'Zen Kurenaido', sans-serif;
+        font-size: 70px;
+    }
+    h2{
+        font-family: 'Quintessential', cursive;
+    }
+}
+.abstractImage{
+    position: absolute;
+    margin-left: 500px;
+    overflow: hidden;
+}
+.vrtLine{
+    background-color: rgb(30, 75, 60);
+    height: 400px;
+    width: 2px;
+    position: fixed;
 }

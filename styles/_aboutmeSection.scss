@@ -1,0 +1,16 @@
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 500px;
+    background: linear-gradient(rgb(20, 28, 53) , rgb(27, 35, 58))
+}
+.about div{
+    padding: 50px;
+}
+.aboutme{
+    width: 49%;
+}
+.aboutmeImage{
+    width: 50%;
+}
