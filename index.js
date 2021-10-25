@@ -1,1 +1,10 @@
-alert("dfgdfg")
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+})
