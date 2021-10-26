@@ -1,4 +1,3 @@
-@import "./_header";
 @import "./_footer";
 @import "./_icons";
 @import "./_aboutmeSection";
@@ -9,7 +8,32 @@ body{
     background-size:contain;
     margin: 0;
 }
+#scrollButton{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 85%;
+    left: 47%;
+    text-align: center;
+    animation: btnScroller 4s infinite;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    line-height: 0.5;
+    p{
+        border-radius: 10%;
+        background-color: transparent;
+        color: white;
+    }
+}
 
+@keyframes btnScroller{
+    0%   {opacity: 0;}
+    25%  {opacity: 0.5;}
+    50%  {opacity: 1;}
+    75%  {opacity: 0.5;}
+    100% {opacity: 0;}
+  }
 #mainContainer{
     display: flex;
     justify-content: space-evenly;
@@ -40,8 +64,9 @@ body{
 }
 .vrtLine{
     background-color: rgb(30, 75, 60);
-    height: 400px;
+    height: 350px;
     width: 2px;
+    margin-bottom: 100px;
     position: fixed;
 }
 .headding{
@@ -73,4 +98,51 @@ body{
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
+}
+::-webkit-scrollbar{
+  width: 0;  
+}
+#scrollPath{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+height: 100%;
+background: rgba(255,255,255,0.05);
+}
+#progressbar{
+position: fixed;
+top: 0;
+right: 0;
+width: 10px;
+background: linear-gradient(to top, #008aff, #00ffe7 );
+animation: animate 5s linear infinite;
+}
+@keyframes animate{
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+#progressbar:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7 );
+    filter: blur(10px);
+}
+#progressbar:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7 );
+    filter: blur(30px);
 }

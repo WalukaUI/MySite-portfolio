@@ -1,6 +1,17 @@
 #footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: adjust-hue($color: #8acfd1, $degrees: 20);
+    background-color: adjust-hue($color: #0d3a3b, $degrees: 20);
+    background: linear-gradient( #141C3C, #0d3a3b );
     padding: 2vh;
 }
+.bottom-container {
+    color: bisque;
+    padding-top: 70px;
+    height: 120px;
+    text-align: center;
+    img{
+        width: 40px;
+        margin-left: 20px;
+    }
+  }

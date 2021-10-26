@@ -17,26 +17,38 @@ function Listener() {
 }
 Listener();
 
-const sliders=document.querySelectorAll('.slide-in')
-const options={
-    threshold:0,
-    rootMargin:"-250px"
-}
-const apperOnScroll= new IntersectionObserver(function(entries){
-entries.forEach(entry =>{
-   
-
-    if(!entry.isIntersecting){
-        return;
+const sliders = document.querySelectorAll(".slide-in");
+const options = {
+  threshold: 0,
+  rootMargin: "-250px",
+};
+const apperOnScroll = new IntersectionObserver(function (entries) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
     }
-     console.log(entry.target);
-    entry.target.classList.add('appear')
-    apperOnScroll.unobserve(entry.target)
-})
-},options);
-sliders.forEach(fader=>{
-    apperOnScroll.observe(fader)
-})
+    entry.target.classList.add("appear");
+    apperOnScroll.unobserve(entry.target);
+  });
+}, options);
+sliders.forEach((fader) => {
+  apperOnScroll.observe(fader);
+});
 
+let progress = document.getElementById("progressbar");
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function () {
+  let progressHeight = (window.pageYOffset / totalHeight) * 100;
+  progress.style.height = progressHeight + "%";
+};
 
-//document.addEventListener("DOMContentLoaded", Listener());
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos < currentScrollPos) {
+    document.getElementById("scrollButton").style.display = "none";
+  }
+  prevScrollpos = currentScrollPos;
+};
+
+//document.addEventListener("DOMContentLoaded", sc());
