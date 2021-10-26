@@ -280,7 +280,7 @@
 }
 
 .about div {
-  padding: 150px;
+  padding: 12%;
 }
 
 .aboutme {
@@ -288,6 +288,30 @@
 }
 
 .aboutmeImage {
+  width: 50%;
+}
+
+#samples {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b233a), to(#141c3d));
+  background: linear-gradient(#1b233a, #141c3d);
+}
+
+.sampleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: antiquewhite;
+}
+
+.sampleContainer div {
+  padding: 10%;
+}
+
+.sampleLinks {
+  width: 49%;
+}
+
+.sampleLinkWindow {
   width: 50%;
 }
 
