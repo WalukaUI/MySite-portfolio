@@ -40,15 +40,9 @@ let totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function () {
   let progressHeight = (window.pageYOffset / totalHeight) * 100;
   progress.style.height = progressHeight + "%";
+  document.getElementById("scrollButton").style.display = "none";
+  
 };
 
-let prevScrollpos = window.pageYOffset;
-window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos < currentScrollPos) {
-    document.getElementById("scrollButton").style.display = "none";
-  }
-  prevScrollpos = currentScrollPos;
-};
 
-//document.addEventListener("DOMContentLoaded", sc());
+//document.addEventListener("DOMContentLoaded", scrollers());

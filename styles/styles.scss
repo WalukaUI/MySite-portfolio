@@ -87,11 +87,12 @@ body{
     transform: translateX(50%);  
 }
 .fade-in-right, .fade-in-left{
-    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in;
-    transition: opacity 250ms ease-in, transform 400ms ease-in,
-      -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, -webkit-transform 1.5s ease-in;
+    transition: opacity 250ms ease-in, transform 1.5s ease-in;
+    transition: opacity 250ms ease-in, transform 1.5s ease-in,
+      -webkit-transform 1.5s ease-in;
     opacity: 0;
+
 }
 .fade-in-right.appear, 
 .fade-in-left.appear{
@@ -99,6 +100,11 @@ body{
     transform: translateX(0);
     opacity: 1;
 }
+
+
+//scroll bar------------------------
+
+
 ::-webkit-scrollbar{
   width: 0;  
 }

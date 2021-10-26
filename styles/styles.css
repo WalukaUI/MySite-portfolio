@@ -545,10 +545,10 @@ body {
 }
 
 .fade-in-right, .fade-in-left {
-  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, -webkit-transform 1.5s ease-in;
+  -webkit-transition: opacity 250ms ease-in, -webkit-transform 1.5s ease-in;
+  transition: opacity 250ms ease-in, transform 1.5s ease-in;
+  transition: opacity 250ms ease-in, transform 1.5s ease-in, -webkit-transform 1.5s ease-in;
   opacity: 0;
 }
 
