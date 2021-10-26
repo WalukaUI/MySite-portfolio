@@ -6,8 +6,8 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background-color: #0d2b3b;
-  background: -webkit-gradient(linear, left top, left bottom, from(#141C3C), to(#0d3a3b));
-  background: linear-gradient(#141C3C, #0d3a3b);
+  background: -webkit-gradient(linear, left top, left bottom, from(#251d49), to(#0d3a3b));
+  background: linear-gradient(#251d49, #0d3a3b);
   padding: 2vh;
 }
 
@@ -312,7 +312,7 @@
 
 .aboutme {
   width: 49%;
-  padding-right: 13%;
+  padding-right: 14%;
   overflow: hidden;
 }
 
@@ -340,7 +340,6 @@
   display: flex;
   color: #f7d5a8;
   padding-bottom: 10%;
-  height: 500px;
   overflow: hidden;
 }
 
@@ -403,6 +402,47 @@
   background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #408c99), to(#599bb3));
   background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
   background-color: #408c99;
+}
+
+#contactMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#141c3d), to(#251d49));
+  background: linear-gradient(#141c3d, #251d49);
+}
+
+.conatctmeDescriptionDiv {
+  width: 49%;
+}
+
+.conatctmeFormDiv {
+  width: 50%;
+}
+
+.contactMeForm {
+  line-height: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10%;
+}
+
+.contactMeForm input {
+  width: 100%;
+}
+
+.contactMeForm button {
+  width: 20%;
+}
+
+.contactMeForm textarea {
+  width: 100%;
+  height: 100px;
 }
 
 body {

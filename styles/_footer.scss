@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: adjust-hue($color: #0d3a3b, $degrees: 20);
-    background: linear-gradient( #141C3C, #0d3a3b );
+    background: linear-gradient( rgb(37, 29, 73), #0d3a3b );
     padding: 2vh;
 }
 .bottom-container {
