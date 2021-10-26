@@ -7,16 +7,19 @@
     background: linear-gradient(rgb(20, 28, 53) , rgb(27, 35, 58))
 }
 .about div{
-    padding: 12%;
+  padding-left: 20%;
 }
 .aboutme{
     width: 49%;
+    padding-right: 13%;
 }
 .aboutme p{
     color: rgb(226, 202, 248);
     font-size:x-large;
-    font-family: 'Quintessential', cursive;
+    font-family: 'Zen Kurenaido', sans-serif;;
 }
 .aboutmeImage{
     width: 50%;
+    padding-right:5%;
+    padding-left: 1% !important;
 }

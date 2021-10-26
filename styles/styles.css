@@ -141,6 +141,32 @@
           animation-timing-function: ease-in-out;
 }
 
+.rest {
+  width: 50px;
+  position: relative;
+  -webkit-animation-name: easeIn;
+          animation-name: easeIn;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.git {
+  width: 50px;
+  position: relative;
+  -webkit-animation-name: roll;
+          animation-name: roll;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
 @-webkit-keyframes easeIn {
   from {
     top: 400px;
@@ -280,21 +306,24 @@
 }
 
 .about div {
-  padding: 12%;
+  padding-left: 20%;
 }
 
 .aboutme {
   width: 49%;
+  padding-right: 13%;
 }
 
 .aboutme p {
   color: #e2caf8;
   font-size: x-large;
-  font-family: 'Quintessential', cursive;
+  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 .aboutmeImage {
   width: 50%;
+  padding-right: 5%;
+  padding-left: 1% !important;
 }
 
 #samples {
@@ -319,12 +348,13 @@
 
 .sampleLinks h4 {
   font-size: x-large;
+  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 .sampleLinks a {
   text-decoration: none;
   color: antiquewhite;
-  font-family: 'Quintessential', cursive;
+  font-family: 'Zen Kurenaido', sans-serif;
   font-size: large;
   line-height: 2;
   cursor: pointer;
@@ -402,15 +432,17 @@ body {
 #mainContainer h1 {
   font-family: 'Zen Kurenaido', sans-serif;
   font-size: 70px;
+  margin-bottom: 0;
 }
 
 #mainContainer h2 {
   font-family: 'Quintessential', cursive;
+  margin-bottom: 20%;
 }
 
 .abstractImage {
   position: absolute;
-  left: -400px;
+  left: -450px;
   top: 300px;
 }
 
@@ -419,5 +451,43 @@ body {
   height: 400px;
   width: 2px;
   position: fixed;
+}
+
+.headding {
+  width: 49%;
+  padding-left: 20%;
+}
+
+.logosContainer {
+  width: 49%;
+}
+
+.logosContainer img {
+  padding-right: 3%;
+}
+
+.fade-in-left {
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.fade-in-right {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.fade-in-right, .fade-in-left {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  -webkit-transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.fade-in-right.appear,
+.fade-in-left.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }
 /*# sourceMappingURL=styles.css.map */

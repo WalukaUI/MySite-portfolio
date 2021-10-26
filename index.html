@@ -13,15 +13,15 @@
   </head>
   <body>
     <main>
-      <section id="header">
+      <!-- <section id="header">
         <div class="headerContainer">
           <div>Home</div>
           <div>About me</div>
           <div>My Sites</div>
         </div>
-      </section>
+      </section> -->
       <section id="mainContainer">
-      <div>
+      <div class="headding">
           <h1>I'm Waluka</h1>
           <h2>A Software Engineer</h2>
           <div class="abstractImage"><img alt="icosaedre" src="images/icosaedre.svg" style="width: 700px;" /></div>
@@ -35,13 +35,14 @@
           <img class="js" alt="react" src="images/logos/js.png" />
           <img class="ruby" alt="ruby" src="images/logos/ruby.svg" />
           <img class="rails" alt="rails" src="images/logos/rails.svg" />
-          <img class="html5" alt="html5" src="images/logos/HTML5.svg" />
-          <img class="css3" alt="css3" src="images/logos/css3.svg" />
- 
       </div>
       <div>
+        <img class="html5" alt="html5" src="images/logos/HTML5.svg" />
+        <img class="css3" alt="css3" src="images/logos/css3.svg" />
         <img class="git" alt="git" src="images/logos/git.svg" />
         <img class="psql" alt="postman" src="images/logos/postgresql.png" />
+      </div>
+      <div>
         <img class="postman" alt="psql" src="images/logos/postman.png" />
         <img class="sacc" alt="sacc" src="images/logos/sass.svg" />
         <img class="mdb" alt="mdb" src="images/logos/mongodb.svg" />
@@ -50,14 +51,14 @@
     </div>
       </section>
       <section id="aboutMe">
-        <div class="about">
+        <div class="about ">
           <div class="aboutme">
-           <p>I'm looking forward to purse an opportunity with a growing organization that will 
+           <p class="slide-in fade-in-left">I'm looking forward to purse an opportunity with a growing organization that will 
             utilize and enhance my knowledge in 
             software engineering field while acquiring essential growth opportunities.</p>
           </div>
           <div class="aboutmeImage">
-            <img alt="laptop" src="images/laps.svg" style="width: 400px;"/>
+            <img class="slide-in fade-in-right" alt="laptop" src="images/laps.svg" style="width: 400px;"/>
           </div>
         </div>
       </section>
@@ -65,9 +66,9 @@
 
       <section id="samples">
         <div class="sampleContainer">
-          <div class="sampleLinks"> 
+          <div class="sampleLinks fade-in-left"> 
             <h4 style="font-family: 'Zen Kurenaido', sans-serif">Check out few of my completed Projects</h4>
-            <ul class="links">
+            <ul id="urls">
               <p><a name="https://doctor-appointment-creator.netlify.app">Doctor Booking App</a></p>
               <p><a name="https://www.slausa.org">SL. Association USA</a></p>
               <p><a name="https://tnt-project-manager.netlify.app">Project Mangement App</a></p>
@@ -76,12 +77,14 @@
             </ul>
           </div>
           <div class="sampleLinkWindow">
+            <div class="fade-in-right">
             <form name="formname"  id="form-first">
               <iframe id="one" src="https://zero-inventory-mgr.netlify.app">
               </iframe>
           </form>
               <a id="openBrowser" href="https://zero-inventory-mgr.netlify.app" target="blank">Open in Browser</a>
           </div>
+        </div>
         </div>
       </section>
 

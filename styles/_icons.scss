@@ -72,6 +72,22 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 }
+.rest{
+    width: 50px;
+    position: relative;
+    animation-name: easeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+.git{
+    width: 50px;
+    position: relative;
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
 @keyframes easeIn{
     from {top: 400px;}
     to {top: 0px}
