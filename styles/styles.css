@@ -1,3 +1,126 @@
+#scrollButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 85%;
+  left: 47%;
+  text-align: center;
+  -webkit-animation: btnScroller 4s infinite;
+          animation: btnScroller 4s infinite;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  line-height: 0.5;
+}
+
+#scrollButton p {
+  border-radius: 10%;
+  background-color: transparent;
+  color: white;
+}
+
+@-webkit-keyframes btnScroller {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes btnScroller {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 640px;
+  min-width: 1024px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #2495f1;
+  background: -webkit-gradient(linear, left top, left bottom, from(#110d44), to(#141c35));
+  background: linear-gradient(#110d44, #141c35);
+}
+
+#mainContainer p {
+  margin: 0;
+}
+
+#mainContainer h1 {
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+#mainContainer h2 {
+  font-family: 'Quintessential', cursive;
+  margin-bottom: 20%;
+}
+
+.abstractImage {
+  position: absolute;
+  left: -450px;
+  top: 300px;
+}
+
+.vrtLine {
+  background-color: #1e4b3c;
+  height: 350px;
+  width: 2px;
+  margin-bottom: 100px;
+  position: fixed;
+}
+
+.headding {
+  width: 49%;
+  padding-left: 20%;
+}
+
+.logosContainer {
+  width: 49%;
+}
+
+.logosContainer img {
+  padding-right: 3%;
+}
+
 #footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,7 +434,6 @@
 }
 
 .aboutme {
-  width: 49%;
   padding-right: 14%;
   overflow: hidden;
 }
@@ -319,11 +441,9 @@
 .aboutme p {
   color: #e2caf8;
   font-size: x-large;
-  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 .aboutmeImage {
-  width: 50%;
   padding-right: 5%;
   padding-left: 1% !important;
   overflow: hidden;
@@ -344,20 +464,16 @@
 }
 
 .sampleLinks {
-  width: 49%;
-  padding-left: 10%;
-  padding-top: 10%;
+  padding: 10% 10% 10%;
 }
 
 .sampleLinks h4 {
   font-size: x-large;
-  font-family: 'Zen Kurenaido', sans-serif;
 }
 
 .sampleLinks a {
   text-decoration: none;
   color: antiquewhite;
-  font-family: 'Zen Kurenaido', sans-serif;
   font-size: large;
   line-height: 2;
   cursor: pointer;
@@ -366,7 +482,6 @@
 }
 
 .sampleLinkWindow {
-  width: 50%;
   padding-top: 10%;
   overflow: hidden;
 }
@@ -390,7 +505,6 @@
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
   font-size: 20px;
   font-weight: bold;
   padding: 13px 32px;
@@ -408,16 +522,14 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: aliceblue;
   background: -webkit-gradient(linear, left top, left bottom, from(#141c3d), to(#251d49));
   background: linear-gradient(#141c3d, #251d49);
 }
 
 .conatctmeDescriptionDiv {
-  width: 49%;
-}
-
-.conatctmeFormDiv {
-  width: 50%;
+  font-size: x-large;
+  padding: 5% 10% 10%;
 }
 
 .contactMeForm {
@@ -446,132 +558,18 @@
 }
 
 body {
+  font-family: 'Zen Kurenaido', sans-serif;
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0;
 }
 
-#scrollButton {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: absolute;
-  top: 85%;
-  left: 47%;
-  text-align: center;
-  -webkit-animation: btnScroller 4s infinite;
-          animation: btnScroller 4s infinite;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  line-height: 0.5;
-}
-
-#scrollButton p {
-  border-radius: 10%;
-  background-color: transparent;
-  color: white;
-}
-
-@-webkit-keyframes btnScroller {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes btnScroller {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#mainContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 640px;
-  min-width: 1024px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #2495f1;
-  background: -webkit-gradient(linear, left top, left bottom, from(#110d44), to(#141c35));
-  background: linear-gradient(#110d44, #141c35);
-}
-
-#mainContainer p {
-  margin: 0;
-}
-
-#mainContainer h1 {
-  font-family: 'Zen Kurenaido', sans-serif;
-  font-size: 70px;
-  margin-bottom: 0;
-}
-
-#mainContainer h2 {
-  font-family: 'Quintessential', cursive;
-  margin-bottom: 20%;
-}
-
-.abstractImage {
-  position: absolute;
-  left: -450px;
-  top: 300px;
-}
-
-.vrtLine {
-  background-color: #1e4b3c;
-  height: 350px;
-  width: 2px;
-  margin-bottom: 100px;
-  position: fixed;
-}
-
-.headding {
-  width: 49%;
-  padding-left: 20%;
-}
-
-.logosContainer {
+.widthDiv1 {
   width: 49%;
 }
 
-.logosContainer img {
-  padding-right: 3%;
+.widthDiv2 {
+  width: 50%;
 }
 
 .fade-in-left {

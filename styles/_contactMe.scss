@@ -1,12 +1,11 @@
 #contactMe{
     display: flex;
+    color: aliceblue;
     background: linear-gradient(rgb(20, 28, 61),rgb(37, 29, 73) )
 }
 .conatctmeDescriptionDiv{
-    width: 49%;
-}
-.conatctmeFormDiv{
-    width: 50%;
+    font-size: x-large;
+    padding: 5% 10% 10%;
 }
 .contactMeForm{
     line-height: 2;

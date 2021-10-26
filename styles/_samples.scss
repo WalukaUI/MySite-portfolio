@@ -8,17 +8,13 @@
     overflow: hidden;
 }
 .sampleLinks{
-    width: 49%;
-    padding-left: 10%;
-    padding-top: 10%;
+    padding: 10% 10% 10%;
     h4{
         font-size: x-large;
-        font-family: 'Zen Kurenaido', sans-serif;
     }
     a{
         text-decoration: none;
         color: antiquewhite;
-        font-family: 'Zen Kurenaido', sans-serif;
         font-size: large;
         line-height: 2;
         cursor:pointer;
@@ -27,7 +23,6 @@
 }
 
 .sampleLinkWindow{
-    width: 50%;
     padding-top: 10%;
     overflow: hidden;
 }
@@ -46,7 +41,6 @@
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
 	font-size:20px;
 	font-weight:bold;
 	padding:13px 32px;

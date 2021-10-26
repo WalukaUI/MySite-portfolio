@@ -6,22 +6,20 @@
     height: 500px;
     background: linear-gradient(rgb(20, 28, 53) , rgb(27, 35, 58));
     overflow: hidden;
-}
-.about div{
-  padding-left: 20%;
+    div{
+        padding-left: 20%;
+      }
 }
 .aboutme{
-    width: 49%;
     padding-right: 14%;
     overflow: hidden;
+    p{
+        color: rgb(226, 202, 248);
+        font-size:x-large;
+    }
 }
-.aboutme p{
-    color: rgb(226, 202, 248);
-    font-size:x-large;
-    font-family: 'Zen Kurenaido', sans-serif;;
-}
+
 .aboutmeImage{
-    width: 50%;
     padding-right:5%;
     padding-left: 1% !important;
     overflow: hidden;
