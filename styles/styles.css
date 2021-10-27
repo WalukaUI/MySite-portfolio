@@ -655,6 +655,16 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  #contactMe .widthDiv1 {
+    width: 70%;
+  }
+  #contactMe .widthDiv2 {
+    width: 75%;
+    padding-left: 10%;
+  }
+}
+
 body {
   font-family: 'Zen Kurenaido', sans-serif;
   background-repeat: no-repeat;
