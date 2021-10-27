@@ -1,4 +1,4 @@
-//iframe url selector------------------------------
+//iframe url selector-----------------------------
 
 function iframeRef(frameRef) {
   return frameRef.src ? frameRef.src : frameRef.src;
