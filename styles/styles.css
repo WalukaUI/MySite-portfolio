@@ -591,7 +591,8 @@ body {
 }
 
 .fade-in-right.appear,
-.fade-in-left.appear {
+.fade-in-left.appear,
+.fadeIn.appear {
   -webkit-transform: translateX(0);
   transform: translateX(0);
   opacity: 1;

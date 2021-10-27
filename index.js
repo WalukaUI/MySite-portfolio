@@ -1,3 +1,4 @@
+//iframe url selector------------------------------
 
 function iframeRef(frameRef) {
   return frameRef.src ? frameRef.src : frameRef.src;
@@ -18,6 +19,9 @@ function Listener() {
 }
 Listener();
 
+//section animation slide in and fadein-------------------
+
+const fadein = document.querySelectorAll(".fadeIn");
 const sliders = document.querySelectorAll(".slide-in");
 const options = {
   threshold: 0,
@@ -36,6 +40,12 @@ sliders.forEach((fader) => {
   apperOnScroll.observe(fader);
 });
 
+fadein.forEach((fader) => {
+  apperOnScroll.observe(fader);
+});
+
+//scrollbar  and scroll button  animation-----------
+
 let progress = document.getElementById("progressbar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
 window.onscroll = function () {
@@ -52,10 +62,6 @@ let emailForm=document.getElementById("emailData")
 
 emailForm.addEventListener("submit", (e)=>{
   e.preventDefault();
-  let name=e.target.name.value
-  let email=e.target.email.value
-  let message=e.target.message.value
-
   emailjs.sendForm(
         "service_dchmott",
         "template_4tdthof",
@@ -65,7 +71,6 @@ emailForm.addEventListener("submit", (e)=>{
      .then(
         (result) => {
           console.log(result.text);
-          //setConfirmWindow(!confirmWindow)
         },
         (error) => {
           console.log(error.text);
@@ -73,6 +78,5 @@ emailForm.addEventListener("submit", (e)=>{
       );
     e.target.reset();
 })
-
 
 //document.addEventListener("DOMContentLoaded", scrollers());
