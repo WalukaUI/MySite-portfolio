@@ -27,6 +27,10 @@ body{
     .widthDiv2{
         width: 100%
     }  
+    .fade-in-right, .fade-in-left, .fadeIn{
+        transform: none  !important;
+        opacity: 1  !important;
+    }
 }
 
 //div animation fade in......................
@@ -45,6 +49,7 @@ body{
     opacity: 0;
 
 }
+
 .fade-in-right.appear, 
 .fade-in-left.appear,
 .fadeIn.appear{

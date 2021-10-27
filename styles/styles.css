@@ -484,6 +484,7 @@
 @media only screen and (max-width: 600px) {
   #aboutMe {
     height: 600px;
+    padding-top: 30px;
   }
   .about {
     overflow: visible;
@@ -655,12 +656,6 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
-  #contactMe .widthDiv2 {
-    width: 95%;
-  }
-}
-
 body {
   font-family: 'Zen Kurenaido', sans-serif;
   background-repeat: no-repeat;
@@ -683,6 +678,11 @@ body {
   }
   .widthDiv2 {
     width: 100%;
+  }
+  .fade-in-right, .fade-in-left, .fadeIn {
+    -webkit-transform: none  !important;
+            transform: none  !important;
+    opacity: 1  !important;
   }
 }
 

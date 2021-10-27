@@ -29,6 +29,7 @@ const options = {
 };
 const apperOnScroll = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
+    
     if (!entry.isIntersecting) {
       return;
     }
@@ -43,6 +44,7 @@ sliders.forEach((fader) => {
 fadein.forEach((fader) => {
   apperOnScroll.observe(fader);
 });
+
 
 //scrollbar  and scroll button  animation-----------
 
