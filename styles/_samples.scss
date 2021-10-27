@@ -6,6 +6,7 @@
     color: rgb(247, 213, 168); 
     padding-bottom: 10%;
     overflow: hidden;
+    background: linear-gradient(rgb(27, 35, 58), rgb(20, 28, 61))
 }
 .sampleLinks{
     padding: 10% 10% 10%;
@@ -50,4 +51,15 @@
 #openBrowser:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
 	background-color:#408c99;
+}
+@media only screen and (max-width: 600px) {
+    .sampleContainer{
+        width: 1020px;
+        flex-direction: column;
+        padding-left: 40%;
+    }
+    .sampleLinkWindow {
+        padding-left: 10%;
+    }
+
 }

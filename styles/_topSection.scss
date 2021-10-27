@@ -47,6 +47,21 @@
         margin-bottom: 20%;
     }
 }
+@media only screen and (max-width: 600px) {
+    body{
+        text-align: center;
+    }
+
+    #mainContainer {
+      flex-direction: column;
+    }
+    .headding{
+        padding-left: 0% !important;
+    }
+    .vrtLine{
+        display: none;
+    }
+  }
 .abstractImage{
     position: absolute;
     left: -450px;
