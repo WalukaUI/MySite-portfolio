@@ -1,6 +1,5 @@
 #scrollButton {
-  display: flex;
-  flex-direction: column;
+  @include flexwithDirection();
   position: absolute;
   top: 85%;
   left: 47%;
@@ -35,8 +34,7 @@
   }
 }
 #mainContainer {
-  display: flex;
-  justify-content: space-evenly;
+  @include displayFlex();
   min-height: 500px;
   align-items: center;
   background-size: cover;

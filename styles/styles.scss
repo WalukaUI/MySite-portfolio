@@ -4,6 +4,15 @@
 @import "./_aboutmeSection";
 @import "./_samples";
 @import "./contactMe";
+
+@mixin displayFlex {
+   display: flex;
+   justify-content: space-evenly; 
+}
+@mixin flexwithDirection {
+    display: flex;
+    flex-direction: column;
+ }
 body{
     font-family: 'Zen Kurenaido', sans-serif;
     background-repeat: no-repeat;

@@ -2,8 +2,7 @@
   background: linear-gradient(rgb(20, 28, 53), rgb(27, 35, 58));
 }
 .about {
-  display: flex;
-  justify-content: space-evenly;
+  @include displayFlex();
   flex-direction: row;
   height: 500px;
   overflow: hidden;

@@ -9,8 +9,7 @@
 }
 .contactMeForm {
   line-height: 2;
-  display: flex;
-  flex-direction: column;
+  @include flexwithDirection();
   padding: 10%;
   input {
     width: 100%;
@@ -32,10 +31,3 @@
     }
   }
 }
-// @media only screen and (max-width: 400px) {
-//   #contactMe {
-//     .widthDiv2 {
-//       width: 95%;
-//     }
-//   }
-// }

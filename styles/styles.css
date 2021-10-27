@@ -171,6 +171,10 @@
   margin-left: 20px;
 }
 
+.logosContainer > img {
+  position: relative;
+}
+
 .react {
   width: 60px;
   position: relative;
@@ -178,8 +182,6 @@
           animation-name: easeIn;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .js {
@@ -189,102 +191,76 @@
           animation-name: roll;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .ruby {
   width: 50px;
-  position: relative;
   -webkit-animation-name: rollIn;
           animation-name: rollIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
 
 .rails {
   width: 40px;
-  position: relative;
   -webkit-animation-name: rollIn;
           animation-name: rollIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
 }
 
 .html5 {
   width: 50px;
-  position: relative;
   -webkit-animation-name: rollInrigtcorner;
           animation-name: rollInrigtcorner;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .css3 {
   width: 60px;
-  position: relative;
   -webkit-animation-name: rollIn;
           animation-name: rollIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
 
 .sacc {
   width: 50px;
-  position: relative;
   -webkit-animation-name: rollIn;
           animation-name: rollIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .psql {
   width: 50px;
-  position: relative;
   -webkit-animation-name: rollInright;
           animation-name: rollInright;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .mdb {
   width: 70px;
-  position: relative;
   -webkit-animation-name: rollInright;
           animation-name: rollInright;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .postman {
   width: 50px;
-  position: relative;
   -webkit-animation-name: rollIn;
           animation-name: rollIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
@@ -296,8 +272,6 @@
           animation-name: easeIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }
@@ -309,8 +283,6 @@
           animation-name: roll;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
 }

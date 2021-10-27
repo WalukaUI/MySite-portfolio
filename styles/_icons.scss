@@ -1,91 +1,77 @@
+$duration: 5s;
+
+.logosContainer > img{
+    position: relative;
+}
+
 .react{
     width: 60px;
     position: relative;
     animation-name: easeIn;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
 }
 .js{
     width: 60px;
     position: relative;
     animation-name: roll;
     animation-duration: 4s;
-    animation-fill-mode: forwards;
 }
 
 .ruby{
     width: 50px;
-    position: relative;
     animation-name: rollIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-out;
 }
 .rails{
     width: 40px;
-    position: relative;
     animation-name: rollIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-in;
 }
 .html5{
     width: 50px;
-    position: relative;
     animation-name: rollInrigtcorner;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
 }.css3{
     width: 60px;
-    position: relative;
     animation-name: rollIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-in-out;
 }
 .sacc{
     width: 50px;
-    position: relative;
     animation-name: rollIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
 }
 .psql{
     width: 50px;
-    position: relative;
     animation-name: rollInright;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
 }
 .mdb{
     width: 70px;
-    position: relative;
     animation-name: rollInright;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
 }
 .postman{
     width: 50px;
-    position: relative;
     animation-name: rollIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-in-out;
 }
 .rest{
     width: 50px;
     position: relative;
     animation-name: easeIn;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-in-out;
 }
 .git{
     width: 50px;
     position: relative;
     animation-name: roll;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+    animation-duration: $duration;
     animation-timing-function: ease-in-out;
 }
 @keyframes easeIn{
