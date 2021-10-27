@@ -582,7 +582,7 @@ body {
           transform: translateX(50%);
 }
 
-.fade-in-right, .fade-in-left {
+.fade-in-right, .fade-in-left, .fadeIn {
   transition: opacity 250ms ease-in, -webkit-transform 1.5s ease-in;
   -webkit-transition: opacity 250ms ease-in, -webkit-transform 1.5s ease-in;
   transition: opacity 250ms ease-in, transform 1.5s ease-in;

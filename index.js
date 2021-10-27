@@ -1,3 +1,4 @@
+
 function iframeRef(frameRef) {
   return frameRef.src ? frameRef.src : frameRef.src;
 }
@@ -43,6 +44,35 @@ window.onscroll = function () {
   document.getElementById("scrollButton").style.display = "none";
   
 };
+
+//Send email------------------------------
+
+
+let emailForm=document.getElementById("emailData")
+
+emailForm.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  let name=e.target.name.value
+  let email=e.target.email.value
+  let message=e.target.message.value
+
+  emailjs.sendForm(
+        "service_dchmott",
+        "template_4tdthof",
+        e.target,
+        "user_lKVMUZPYGwUDtHBAdsLEn"
+      )
+     .then(
+        (result) => {
+          console.log(result.text);
+          //setConfirmWindow(!confirmWindow)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
+})
 
 
 //document.addEventListener("DOMContentLoaded", scrollers());

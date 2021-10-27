@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Quintessential&family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="./styles/styles.css" />
     <title>Document</title>
+
   </head>
   <body>
     <main>
@@ -88,19 +89,19 @@
       </section>
 
       <section id="contactMe">
-        <div class="conatctmeDescriptionDiv widthDiv1">
+        <div class="conatctmeDescriptionDiv widthDiv1 fadeIn">
           <h4>Contact Me</h4>
           <p>You are just a button click away from me.
             Best way to contact me is send an email.
             Let me know anything by filling this form.... 😊.... </p>
         </div>
-        <div class="conatctmeFormDiv widthDiv2">
-          <form onsubmit="sendemail()">
+        <div class="conatctmeFormDiv widthDiv2 fadeIn">
+          <form id="emailData">
             <div class="contactMeForm">
-             <label>Name<input name="name" placeholder="Your name"/></label>
-             <label>Email Address<input name="name" placeholder="Your email address"/></label>
-             <label>Comment/Message<textarea name="name" placeholder="Comment/Message. Max 600 charactors"></textarea></label>
-             <button>Submit</button>
+             <label>Name<input name="name" placeholder="Your name" maxlength="40" required/></label>
+             <label>Email Address<input name="email" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" placeholder="Your email address" maxlength="40" required/></label>
+             <label>Comment/Message<textarea name="message" maxlength="600" placeholder="Comment/Message. Max 600 charactors" required></textarea></label>
+             <button type="submit">Send</button>
             </div>
           </form>
         </div>
@@ -120,5 +121,12 @@
       </section>
     </main>
     <script src="index.js"></script>
+        <!-- email js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_lKVMUZPYGwUDtHBAdsLEn");
+         })();
+         </script>
   </body>
 </html>
