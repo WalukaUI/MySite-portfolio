@@ -67,11 +67,10 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  min-height: 500px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 640px;
-  min-width: 1024px;
   background-size: cover;
   background-repeat: no-repeat;
   color: #2495f1;
@@ -103,6 +102,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 10%;
   }
   .headding {
     padding-left: 0% !important;
@@ -113,6 +113,7 @@
 }
 
 .abstractImage {
+  width: 50%;
   position: absolute;
   left: -450px;
   top: 300px;
@@ -162,16 +163,6 @@
 .bottom-container img {
   width: 40px;
   margin-left: 20px;
-}
-
-@media only screen and (max-width: 600px) {
-  #footer {
-    width: 1020px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 .react {
@@ -440,6 +431,11 @@
   }
 }
 
+#aboutMe {
+  background: -webkit-gradient(linear, left top, left bottom, from(#141c35), to(#1b233a));
+  background: linear-gradient(#141c35, #1b233a);
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -452,8 +448,6 @@
       -ms-flex-direction: row;
           flex-direction: row;
   height: 500px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#141c35), to(#1b233a));
-  background: linear-gradient(#141c35, #1b233a);
   overflow: hidden;
 }
 
@@ -471,6 +465,10 @@
   font-size: x-large;
 }
 
+.computer {
+  width: 90%;
+}
+
 .aboutmeImage {
   padding-right: 5%;
   padding-left: 1% !important;
@@ -478,21 +476,29 @@
 }
 
 @media only screen and (max-width: 600px) {
+  #aboutMe {
+    height: 600px;
+  }
   .about {
-    width: 1024px !important;
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+    overflow: visible;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about div {
+    padding: 0%;
+  }
+  .about p {
+    padding: 15%;
   }
   .aboutme {
-    margin-left: 5%;
+    margin-left: 0%;
+    overflow: visible;
   }
   .aboutmeImage {
-    margin-left: 25%;
+    overflow: visible;
+    padding-bottom: 10%;
   }
 }
 
@@ -569,15 +575,24 @@
 
 @media only screen and (max-width: 600px) {
   .sampleContainer {
-    width: 1020px;
+    width: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 40%;
+    overflow: visible;
+  }
+  .sampleContainer .widthDiv1 {
+    width: 80%;
   }
   .sampleLinkWindow {
-    padding-left: 10%;
+    overflow: visible;
+  }
+  .widthDiv2 {
+    width: 100%;
+  }
+  #urls {
+    padding-left: 0%;
   }
 }
 
@@ -622,17 +637,13 @@
 
 @media only screen and (max-width: 600px) {
   #contactMe {
-    width: 1024px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .conatctmeDescriptionDiv {
-    padding-left: 25%;
-  }
-  .conatctmeFormDiv {
-    padding-left: 25%;
+  #contactMe .widthDiv1 {
+    width: 80%;
   }
 }
 
@@ -641,6 +652,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   margin: 0;
+  background-color: #2b2579;
 }
 
 .widthDiv1 {
@@ -649,6 +661,15 @@ body {
 
 .widthDiv2 {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .widthDiv1 {
+    width: 100%;
+  }
+  .widthDiv2 {
+    width: 100%;
+  }
 }
 
 .fade-in-left {

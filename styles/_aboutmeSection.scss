@@ -1,9 +1,11 @@
+#aboutMe{
+  background: linear-gradient(rgb(20, 28, 53), rgb(27, 35, 58));
+}
 .about {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   height: 500px;
-  background: linear-gradient(rgb(20, 28, 53), rgb(27, 35, 58));
   overflow: hidden;
   div {
     padding-left: 20%;
@@ -17,7 +19,9 @@
     font-size: x-large;
   }
 }
-
+.computer{
+  width: 90%;
+}
 .aboutmeImage {
   padding-right: 5%;
   padding-left: 1% !important;
@@ -25,15 +29,25 @@
 }
 
 @media only screen and (max-width: 600px) {
+#aboutMe{
+  height: 600px;
+}
   .about {
-    width: 1024px !important;
-    display: flex !important;
-    flex-direction: column !important;
+    overflow: visible;
+    flex-direction: column;
+    div{
+      padding: 0%;
+    }
+    p{
+      padding: 15%;
+    }
   }
   .aboutme {
-    margin-left: 5%;
+    margin-left: 0%;
+    overflow: visible;
   }
   .aboutmeImage {
-    margin-left: 25%;
+    overflow: visible;
+    padding-bottom: 10%;
   }
 }

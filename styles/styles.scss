@@ -9,6 +9,7 @@ body{
     background-repeat: no-repeat;
     background-size:contain;
     margin: 0;
+    background-color: rgb(43, 37, 121);
 }
 
 //set width for all sections...............
@@ -18,6 +19,14 @@ body{
 }
 .widthDiv2{
     width: 50%
+}
+@media only screen and (max-width: 600px) {
+    .widthDiv1{
+        width: 100%
+    }
+    .widthDiv2{
+        width: 100%
+    }  
 }
 
 //div animation fade in......................

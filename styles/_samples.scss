@@ -54,12 +54,22 @@
 }
 @media only screen and (max-width: 600px) {
     .sampleContainer{
-        width: 1020px;
+        width: auto;
         flex-direction: column;
-        padding-left: 40%;
+        overflow: visible;
+        .widthDiv1{
+width: 80%;
+        }
     }
     .sampleLinkWindow {
-        padding-left: 10%;
+     
+        overflow: visible;
+    }
+    .widthDiv2{
+        width: 100%;
+    }
+    #urls{
+        padding-left: 0%;
     }
 
 }
