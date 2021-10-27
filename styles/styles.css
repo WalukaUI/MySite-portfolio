@@ -532,8 +532,8 @@
   font-size: large;
   line-height: 2;
   cursor: pointer;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #18203B), color-stop(20%, #3220d3));
-  background: linear-gradient(to bottom, #18203B 90%, #3220d3 20%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, #18203b), color-stop(20%, #3220d3));
+  background: linear-gradient(to bottom, #18203b 90%, #3220d3 20%);
 }
 
 .sampleLinkWindow {
@@ -585,11 +585,12 @@
   .sampleContainer .widthDiv1 {
     width: 80%;
   }
-  .sampleLinkWindow {
-    overflow: visible;
+  .sampleContainer .widthDiv2 {
+    width: 90%;
   }
-  .widthDiv2 {
-    width: 100%;
+  .sampleLinkWindow {
+    padding-left: 5%;
+    overflow: visible;
   }
   #urls {
     padding-left: 0%;
@@ -641,6 +642,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    overflow: visible;
   }
   #contactMe .widthDiv1 {
     width: 80%;
