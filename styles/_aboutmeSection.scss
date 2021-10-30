@@ -34,7 +34,7 @@
   padding-top: 30px;
 }
   .about {
-    overflow: hidden;
+    overflow: visible;
     flex-direction: column;
     div{
       padding: 0%;
@@ -47,10 +47,10 @@
   }
   .aboutme {
     margin-left: 0%;
-    overflow: hidden;
+    overflow: visible;
   }
   .aboutmeImage {
-    overflow: hidden;
+    overflow: visible;
     padding-bottom: 10%;
   }
 }

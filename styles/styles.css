@@ -465,7 +465,7 @@
     padding-top: 30px;
   }
   .about {
-    overflow: hidden;
+    overflow: visible;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -479,10 +479,10 @@
   }
   .aboutme {
     margin-left: 0%;
-    overflow: hidden;
+    overflow: visible;
   }
   .aboutmeImage {
-    overflow: hidden;
+    overflow: visible;
     padding-bottom: 10%;
   }
 }
@@ -565,7 +565,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: visible;
+    overflow: hidden;
   }
   .sampleContainer .widthDiv1 {
     width: 80%;
@@ -575,7 +575,7 @@
   }
   .sampleLinkWindow {
     padding-left: 5%;
-    overflow: visible;
+    overflow: hidden;
   }
   #urls {
     padding-left: 0%;
@@ -627,7 +627,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: visible;
+    overflow: hidden;
   }
   #contactMe .widthDiv1 {
     width: 80%;
