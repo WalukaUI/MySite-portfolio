@@ -121,6 +121,12 @@
   padding-right: 3%;
 }
 
+@media only screen and (max-width: 1000px) {
+  .vrtLine {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   body {
     text-align: center;
@@ -459,7 +465,7 @@
     padding-top: 30px;
   }
   .about {
-    overflow: visible;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -473,10 +479,10 @@
   }
   .aboutme {
     margin-left: 0%;
-    overflow: visible;
+    overflow: hidden;
   }
   .aboutmeImage {
-    overflow: visible;
+    overflow: hidden;
     padding-bottom: 10%;
   }
 }
