@@ -9,7 +9,7 @@
 }
 .contactMeForm {
   line-height: 2;
-  @include flexwithDirection();
+  @include display();
   padding: 10%;
   input {
     width: 100%;
