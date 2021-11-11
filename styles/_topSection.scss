@@ -83,6 +83,10 @@
   .vrtLine {
     display: none;
 }}
+@media only screen and (max-width: 900px) {
+  .headding {
+    padding-left: 7%;
+}}
 @media only screen and (max-width: 600px) {
     body {
       text-align: center;

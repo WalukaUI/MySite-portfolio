@@ -52,8 +52,9 @@
   background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
   background-color: #408c99;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .sampleContainer {
+    text-align: center;
     width: auto;
     flex-direction: column;
     overflow: hidden;
@@ -65,11 +66,17 @@
     }
   }
   .sampleLinkWindow {
-    padding-left: 5%;
+    padding: 5%;
     overflow: hidden;
   }
 
   #urls {
     padding-left: 0%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .sampleLinks {
+  padding-right: 0px;
+  padding-left: 7%;
   }
 }
