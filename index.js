@@ -1,3 +1,17 @@
+//Sites description------------------------------
+
+let sites=document.querySelectorAll(".mysites");
+let box=document.querySelectorAll(".content");
+
+for(let i=0 ; i<sites.length; i++){
+  sites[i].addEventListener("mouseover", function(){
+    box[i].style.display= "contents";
+   })
+   sites[i].addEventListener("mouseout", function(){
+    box[i].style.display= "none";
+   })
+}
+
 //iframe url selector-----------------------------
 
 function iframeRef(frameRef) {
