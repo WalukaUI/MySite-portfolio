@@ -532,6 +532,10 @@
   background: linear-gradient(to bottom, #18203b 90%, #3220d3 20%);
 }
 
+.content {
+  display: none;
+}
+
 .sampleLinkWindow {
   padding-top: 10%;
   overflow: hidden;
